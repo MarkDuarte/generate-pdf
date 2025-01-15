@@ -28,8 +28,12 @@ Certifique-se de ter o Python instalado em sua máquina (versão 3.7 ou superior
 ### Post / generate-pdf
 
 Este endpoint recebe os dados no formato JSON e gera um arquivo PDF com base nas informações fornecidas.
-URL: /generate-pdf
-Método HTTP: POST
+**URL**: /generate-pdf
+**Método HTTP**: POST
+
+**title** (obrigatório): Título do documento.
+**content** (obrigatório): Conteúdo do relatório.
+**author** (Obrigátorio): Autor do documento.
 
 json```
 {
@@ -39,11 +43,7 @@ json```
 }
 ```
 
-title (obrigatório): Título do documento.
-content (obrigatório): Conteúdo do relatório.
-author (Obrigátorio): Autor do documento.
-
-json````
+bash```
 curl -X POST http://127.0.0.1:5000/generate-pdf \
 -H "Content-Type: application/json" \
 -d '{
