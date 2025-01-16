@@ -1,1 +1,4 @@
-pdfvenv/
+# Ignorar pastas de ambientes virtuais
+pdfenv/
+.env/
+*.egg-info/
