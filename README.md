@@ -20,8 +20,8 @@ Certifique-se de ter o Python instalado em sua máquina (versão 3.7 ou superior
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+   git clone https://github.com/MarkDuarte/generate-pdf.git
+   cd pdf
 
 ## Endpoints
 
