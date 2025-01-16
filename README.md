@@ -36,7 +36,7 @@ Este endpoint recebe os dados no formato JSON e gera um arquivo PDF com base nas
 **author** (Obrigátorio): Autor do documento.
 
 ## Executando o endpoint:
-      ```
+      ```bash
       curl -X POST http://127.0.0.1:5000/generate-pdf \
       -H "Content-Type: application/json" \
       -d '{
