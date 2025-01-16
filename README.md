@@ -35,20 +35,19 @@ Este endpoint recebe os dados no formato JSON e gera um arquivo PDF com base nas
 **content** (obrigatório): Conteúdo do relatório.
 **author** (Obrigátorio): Autor do documento.
 
+## Executando o endpoint:
+    ```bash
+    curl -X POST http://127.0.0.1:5000/generate-pdf \
+    -H "Content-Type: application/json" \
+    -d '{
+      "title": "Relatório de Vendas",
+      "content": "Este é um relatório detalhado de vendas do mês.",
+      "author": "Marcos"
+    }'```
+
   ```json
     {
       "title": "Relatório de Vendas",
       "content": "Este é um relatório detalhado de vendas do mês.",
       "author": "Marcos Duarte"
     }
-
-## Executando o endpoint
-
-```bash
-curl -X POST http://127.0.0.1:5000/generate-pdf \
--H "Content-Type: application/json" \
--d '{
-  "title": "Relatório de Vendas",
-  "content": "Este é um relatório detalhado de vendas do mês.",
-  "author": "Marcos"
-}'
